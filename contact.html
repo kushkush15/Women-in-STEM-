@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+<!-- This is the name that appears on the browser tab -->
+<title>Contact Us | Women in STEM</title>
+
+<!-- This connects my page to my CSS stylesheet -->
+<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="top-header">
+
+        <!-- I placed my logo on the left side of the header -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Women in STEM website logo">
+        </div>
+
+        <!-- I used a banner image for the title of my website -->
+        <div class="website-title">
+            <img src="images/banner_3.png" alt="Women in STEM website banner">
+        </div>
+
+    </div>
+
+    <!-- These links allow the user to move between my different pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profiles</a>
+        <a href="iod.html">Importance of Diversity</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+        <div class="hero-box">
+
+            <!-- This contains the main heading and introduction for my Contact Us page -->
+            <div class="hero-text">
+                <div class="h1-heading"><h1>CONTACT US</h1></div>
+                <p>
+                    Empowering women to break barriers, challenge expectations, share their ideas, and shape a more innovative future through STEM.
+                </p>
+            </div>
+
+            <!-- I used three images to keep the same hero design across my pages -->
+            <div class="hero-images">
+                <img src="images/home_image_resized_77x96px.png"
+                    alt="Woman working in a STEM environment"
+                    class="hero-image image-top">
+
+                <img src="images/image_2_150x170.png"
+                    alt="Women working together in STEM"
+                    class="hero-image image-bottom">
+
+                <img src="images/image_3_150x170.png"
+                    alt="Women participating in STEM"
+                    class="hero-image image-left">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+
+    <!-- I used this contact box so users can send a message through my website -->
+    <div id="contact-box">
+
+        <!-- The form collects the user's details and sends them to my message page -->
+        <form action="message.html">
+
+            <!-- I used required fields so the user must complete the form before submitting -->
+
+            <!-- FIRST AND LAST NAME -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <!-- This label tells the user what information to enter -->
+                    <label for="fname">First Name:</label>
+
+                    <!-- I used a text input so the user can enter their first name -->
+                    <input type="text" id="fname" name="firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <!-- This label is connected to the last name input -->
+                    <label for="lname">Last Name:</label>
+
+                    <!-- I used another text input for the user's last name -->
+                    <input type="text" id="lname" name="lastname" required>
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL AND SUBJECT -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <!-- I used an email input so the browser can check that an email address has been entered -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <!-- This allows the user to give their message a subject -->
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+            <div class="message-group">
+
+                <!-- This label explains where the user can write their message -->
+                <label for="message">Add a message</label>
+
+                <!-- I used a textarea because the user may need to enter a longer message -->
+                <textarea id="message" name="message" required></textarea>
+
+            </div>
+
+
+            <!-- SUBMIT BUTTON -->
+
+            <!-- This button allows the user to submit their completed contact form -->
+            <button type="submit" class="submit-button">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- The required attributes on my form inputs help check that important fields are completed -->
+    <!-- The email input also provides basic browser validation for the email format -->
+    <!-- When the user clicks Submit, the form sends the entered information to message.html -->
+
+
+    <!-- FOOTER -->
+
+    <section class="footer-box" id="contact">
+
+        <!-- I used the footer to give users quick access to my other pages -->
+        <div class="quick-links">
+            <h2>Quick Links:</h2>
+            <ul>
+                <li><a href="index.html"><img src="images/home_icon_footer.png" alt="Home page icon"> Home</a></li>
+                <li><a href="profile.html"><img src="images/profile_icon_footer.png" alt="Profiles page icon"> Profile</a></li>
+                <li><a href="iod.html"><img src="images/iod_icon_footer.png" alt="Importance of Diversity page icon"> Importance of Diversity</a></li>
+                <li><a href="gallery.html"><img src="images/gallery_icon_footer.png" alt="Gallery page icon"> Gallery</a></li>
+                <li><a href="contact.html"><img src="images/contact_us_icon_footer.png" alt="Contact Us page icon"> Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- I included social media links so users can find my website online -->
+        <div class="social-media">
+            <h2>Social Media:</h2>
+
+            <!-- Instagram -->
+            <div class="social-item">
+                <img src="images/instgram_2_logo_social_media.png" alt="Instagram logo">
+                <p>
+                    <strong>User:</strong> Women_in_STEM01<br>
+                    <strong>Link:</strong>
+                    <a href="https://www.instagram.com/" target="_blank">https://www.instagram.com/</a>
+                </p>
+            </div>
+
+            <!-- Facebook -->
+            <div class="social-item">
+                <img src="images/facebook_logo_social_media.png" alt="Facebook logo">
+                <p>
+                    <strong>User:</strong> Women_in_STEM01<br>
+                    <strong>Link:</strong>
+                    <a href="https://www.facebook.com/" target="_blank">https://www.facebook.com/</a>
+                </p>
+            </div>
+
+            <!-- TikTok -->
+            <div class="social-item">
+                <img src="images/tiktok_logo_social_media.png" alt="TikTok logo">
+                <p>
+                    <strong>User:</strong> Women_in_STEM01<br>
+                    <strong>Link:</strong>
+                    <a href="https://www.tiktok.com/" target="_blank">https://www.tiktok.com/</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+</body>
+
+</html>
